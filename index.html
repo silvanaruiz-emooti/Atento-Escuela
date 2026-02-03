@@ -373,7 +373,7 @@
                         { "id": "edad", "label": "Edad", "type": "text", "readonly": true },
                         { "id": "sexo", "label": "Sexo", "type": "text", "readonly": true },
                         { "id": "fecha_evaluacion", "label": "Fecha de evaluación", "type": "date" },
-                        { "id": "centro_escuela", "label": "Centro / Escuela", "type": "text" },
+                        { "id": "centro_escuela", "label": "Centro / Escuela", "type": "text", "readonly": true },
                         { "id": "curso_etapa", "label": "Curso y etapa", "type": "text", "readonly": true }
                     ]
                 },
@@ -601,7 +601,7 @@
                     sexo: selectedStudent.sexo,
                     curso_etapa: selectedStudent.curso_etapa,
                     fecha_evaluacion: new Date().toISOString().split('T')[0],
-                    centro_escuela: '',
+                    centro_escuela: selectStudent.centro_escuela,
                     nombre_respondedor: '',
                     relacion: '',
                     meses_conoce: '',
