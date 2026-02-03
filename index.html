@@ -582,7 +582,7 @@
 
                 selectedStudent = student;
                 
-                document.getElementById('preview-id').textContent = student.id;
+                document.getElementById('preview-id').textContent = student.full_name;
                 document.getElementById('preview-edad').textContent = student.edad + ' años';
                 document.getElementById('preview-sexo').textContent = student.sexo;
                 document.getElementById('preview-curso').textContent = student.curso_etapa;
@@ -597,7 +597,7 @@
                 
                 // Autocompletar campos
                 state.meta = {
-                    nombre_id: selectedStudent.id,
+                    nombre_id: selectedStudent.full_name,
                     edad: selectedStudent.edad,
                     sexo: selectedStudent.sexo,
                     curso_etapa: selectedStudent.curso_etapa,
